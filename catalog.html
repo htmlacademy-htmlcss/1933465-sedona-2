@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона: каталог</title>
   </head>
 
@@ -10,7 +11,7 @@
     <header class="page-header">
       <nav class="page-header__navigation navigation">
         <a class="navigation__logo" href="index.html">
-          <img class="navigation__image" src="#" alt="Логотип Седона">
+          <img class="navigation__image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -20,7 +21,7 @@
             <a class="navigation__link" href="#">О Седоне</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link_current" href="#">Гостиницы</a>
+            <a class="navigation__link navigation__link_current" href="#" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +47,7 @@
             </a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Гостиницы</a>
+            <a class="breadcrumbs__link" href="#" aria-current="page">Гостиницы</a>
           </li>
         </ol>
       </section>
@@ -137,7 +138,7 @@
         <ul class="hotels__list">
           <li class="hotels__item">
             <a class="hotels__link-image" href="#">
-              <img class="hotels__image" src="#" alt="Amara Resort & Spa">
+              <img class="hotels__image" src="images/hotels/amara-resort.jpg" width="300" height="212" alt="Amara Resort & Spa">
             </a>
             <a class="hotels__link-title" href="#">
               <h3 class="hotels__title">Amara Resort & Spa</h3>
@@ -152,7 +153,7 @@
 
           <li class="hotels__item">
             <a class="hotels__link-image" href="#">
-              <img class="hotels__image" src="#" alt="Villas at Poco Diablo">
+              <img class="hotels__image" src="images/hotels/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
             </a>
             <a class="hotels__link-title" href="#">
               <h3 class="hotels__title">Villas at Poco Diablo</h3>
@@ -167,7 +168,7 @@
 
           <li class="hotels__item">
             <a class="hotels__link-image" href="#">
-              <img class="hotels__image" src="#" alt="Desert Quail Inn">
+              <img class="hotels__image" src="images/hotels/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn">
             </a>
             <a class="hotels__link-title" href="#">
               <h3 class="hotels__title">Desert Quail Inn</h3>
@@ -182,7 +183,7 @@
 
           <li class="hotels__item">
             <a class="hotels__link-image" href="#">
-              <img class="hotels__image" src="#" alt="GreenTree Inn">
+              <img class="hotels__image" src="images/hotels/green-tree-inn.jpg" width="300" height="212" alt="GreenTree Inn">
             </a>
             <a class="hotels__link-title" href="#">
               <h3 class="hotels__title">GreenTree Inn</h3>
@@ -219,7 +220,8 @@
         <h2 class="subscribe__heading">Подпишитесь на рассылку</h2>
         <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="subscribe__email" type="email" name="email" placeholder="Ваш e-mail">
+          <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
+          <input class="subscribe__email" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
           <button class="subscribe__button" type="submit">Подписаться</button>
         </form>
       </section>
