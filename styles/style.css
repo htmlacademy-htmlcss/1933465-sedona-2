@@ -556,7 +556,7 @@ body {
   border: none;
 }
 
-.filters__price:first-child {
+.filters__price:first-of-type {
   border-radius: 4px 0 0 4px;
 }
 
@@ -566,7 +566,7 @@ body {
   padding: 12px 20px 12px 10px;
 }
 
-.filters__price-text:last-child {
+.filters__price-text:last-of-type {
   border-radius: 0 4px 4px 0;
 }
 
