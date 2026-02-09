@@ -79,7 +79,6 @@ body {
   font-style: normal;
   color: var(--color-text-primary);
   background-color: var(--color-button-background-quaternary);
-  margin: unset;
 }
 
 .visually-hidden {
@@ -640,11 +639,6 @@ body {
   margin: 0;
 }
 
-.display-type__item{
-  /* margin: 0; */
-  /* padding: 0; */
-}
-
 .display-type__link{
   padding: 17px 16px;
   border: 2px solid var(--color-icon-border-default);
@@ -655,8 +649,6 @@ body {
 .display-type__image{
   display: block;
 }
-
-
 
 .display-type__link_active{
   border: 2px solid var(--color-icon-border-active);
@@ -804,7 +796,6 @@ body {
   font-size: var(--font-size-button-primary);
   line-height: var(--line-height-button-primary);
   font-weight: var(--font-weight-bold);
-
   text-align: center;
 }
 
