@@ -28,10 +28,10 @@
           </ul>
         </nav>
         <div class="page-header__user user-menu">
-          <a class="user-menu__search" href="#">
+          <a class="user-menu__search user-menu__button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
-          <a class="user-menu__favorites" href="#">
+          <a class="user-menu__favorites user-menu__button" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="user-menu__favorites-count">12</span>
           </a>
@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <main class="main">
+      <main class="main catalog">
         <div class="main__container">
           <section class="main__header">
             <h1 class="main__title">Гостиницы Седоны</h1>
@@ -94,17 +94,20 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filters__group filters__group_price">
+              <fieldset class="filters__group">
                 <legend class="filters__legend">Стоимость, ₽:</legend>
-                <input class="filters__price" type="text" name="min-price" id="min-price" value="0">
-                <label class="filters__price-text" for="min-price">от</label>
-                <input class="filters__price" type="text" name="max-price" id="max-price" value="9000">
-                <label class="filters__price-text" for="max-price">до</label>
+                <div class="filter__container">
+                  <input class="filters__price" type="text" name="min-price" id="min-price" value="0">
+                  <label class="filters__price-text" for="min-price">от</label>
+                  <input class="filters__price" type="text" name="max-price" id="max-price" value="9000">
+                  <label class="filters__price-text" for="max-price">до</label>
+                </div>
               </fieldset>
-              <div class="filters__actions">
-                <button class="filters__submit filters__button" type="submit">Применить</button>
-                <button class="filters__reset filters__button" type="reset">Сбросить</button>
-              </div>
+              <div class="filters__button-container">
+                  <button class="filters__submit filters__button" type="submit">Применить</button>
+                  <button class="filters__reset filters__button" type="reset">Сбросить</button>
+
+              </di>
             </form>
           </section>
         </div>
@@ -133,8 +136,8 @@
               <li class="display-type__item">
                 <a class="display-type__link" href="catalog.html?view=list">
                   <img class="display-type__image" src="images/list.svg" width="16" height="14" alt="Список">
-              </a>
-                </li>
+                </a>
+              </li>
             </ul>
           </section>
           <section class="main__hotels hotels">
@@ -152,7 +155,9 @@
                 <p class="hotels__price">От 4000 ₽</p>
                 <a class="hotels__details hotels__button" href="#">Подробнее</a>
                 <button class="hotels__favorite hotels__button" type="button">В избранное</button>
-                <div class="hotels__stars"></div>
+                <div class="hotels__stars hotels__stars_four">
+                  <p class="visually-hidden">4 звезды</p>
+                </div>
                 <p class="hotels__rating">Рейтинг: 8,5</p>
               </li>
 
@@ -169,7 +174,9 @@
                 <a class="hotels__details hotels__button" href="#">Подробнее</a>
                 <button class="hotels__favorite hotels__button hotels__favorite_active" type="button">В
                   избранном</button>
-                <div class="hotels__stars"></div>
+                <div class="hotels__stars hotels__stars_four">
+                  <p class="visually-hidden">4 звезды</p>
+                </div>
                 <p class="hotels__rating">Рейтинг: 9,2</p>
               </li>
 
@@ -185,7 +192,9 @@
                 <p class="hotels__price">От 2500 ₽</p>
                 <a class="hotels__details hotels__button" href="#">Подробнее</a>
                 <button class="hotels__favorite hotels__button" type="button">В избранное</button>
-                <div class="hotels__stars"></div>
+                <div class="hotels__stars hotels__stars_three">
+                  <p class="visually-hidden">3 звезды</p>
+                </div>
                 <p class="hotels__rating">Рейтинг: 6,9</p>
               </li>
 
@@ -201,14 +210,16 @@
                 <p class="hotels__price">От 4000 ₽</p>
                 <a class="hotels__details hotels__button" href="#">Подробнее</a>
                 <button class="hotels__favorite hotels__button" type="button">В избранное</button>
-                <div class="hotels__stars"></div>
+                <div class="hotels__stars hotels__stars_two">
+                  <p class="visually-hidden">2 звезды</p>
+                </div>
                 <p class="hotels__rating">Рейтинг: 5,0</p>
               </li>
             </ul>
 
             <ul class="hotels__pagination pagination">
-              <li class="pagination__item pagination__item_current">
-                <a class="pagination__link">1</a>
+              <li class="pagination__item ">
+                <a class="pagination__link pagination__link_current">1</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">2</a>
@@ -219,8 +230,8 @@
               <li class="pagination__item">
                 <a class="pagination__link" href="#">4</a>
               </li>
-              <li class="pagination__item pagination__item_more">
-                <a class="pagination__link">...</a>
+              <li class="pagination__item ">
+                <a class="pagination__link pagination__link_more">...</a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">10</a>
