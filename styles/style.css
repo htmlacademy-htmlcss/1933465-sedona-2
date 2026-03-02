@@ -42,9 +42,6 @@
 
   --icons-basic: #000000;
   --icons-second: #83b3d3;
-  --icons-text: #7db54f;
-  --icons-hover: #756157;
-  --icons-active: rgba(117, 97, 87, 0.3);
   --icons-second-hover: #68a2ca;
   --icons-second-active: rgba(104, 162, 202, 0.3);
 
@@ -221,7 +218,6 @@ body {
     color: var(--color-text-tertiary-active);
     background-color: var(--color-button-background-tertiary);
   }
-
 }
 
 .user-menu__icon {
@@ -731,6 +727,7 @@ body {
   &:active {
     opacity: 0.3;
   }
+
 }
 
 .breadcrumbs__link_home {
@@ -818,7 +815,7 @@ body {
 .filters__label {
   font-size: var(--font-size-checkbox);
   line-height: var(--line-height-checkbox);
-  margin-inline-start: 16px;
+  padding-inline-start: 16px;
 }
 
 .filter__container {
@@ -934,12 +931,19 @@ body {
   font-weight: inherit;
   color: inherit;
   background-color: var(--color-background-primary);
-  padding: 12px 20px;
+  padding: 12px 36px 12px 20px;
   min-width: 292px;
   box-sizing: border-box;
   border: 2px solid #e5e5e5;
   margin-inline-start: auto;
   margin-inline-end: 14px;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("../images/selector-apearance.svg");
+  background-position: right 18px center;
+  background-repeat: no-repeat;
 }
 
 .display-type {
@@ -955,9 +959,15 @@ body {
 
 .display-type__link {
   padding: 15px 14px;
-  border: 1.5px solid var(--color-button-background-disabled);
+  border: 2px solid var(--color-button-background-disabled);
   border-radius: 4px;
   display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    border: 2px solid var(--icons-basic);
+  }
 }
 
 .display-type__image {
