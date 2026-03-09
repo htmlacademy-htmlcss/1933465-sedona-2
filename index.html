@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -17,36 +18,27 @@
           </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link_current" href="#" aria-current="page">Главная</a>
+              <a class="title title_small navigation__link navigation__link_current" href="#"
+                aria-current="page">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">О Седоне</a>
+              <a class="title title_small navigation__link" href="#">О Седоне</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Гостиницы</a>
+              <a class="title title_small navigation__link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="page-header__user user-menu">
           <a class="user-menu__search user-menu__button" href="#">
-            <svg class="user-menu__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path
-                d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
-                fill="currentColor" />
-            </svg>
+
             <span class="visually-hidden">Поиск</span>
           </a>
           <a class="user-menu__favorites user-menu__button" href="#">
-            <svg class="user-menu__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path
-                d="M9.9 19C9.6 19 9.3 18.9 9.1 18.6C3.7 12.5 2.4 11.1 2.1 10.7C1.4 9.8 1 8.6 1 7.4C1 4.4 3.4 2 6.5 2C7.8 2 9 2.5 10 3.3C11 2.5 12.3 2 13.5 2C16.5 2 19 4.4 19 7.4C19 8.7 18.5 9.9 17.7 10.8L10.7 18.7C10.5 18.9 10.3 19 9.9 19ZM3.9 9.5C4.2 9.9 7.4 13.5 10 16.4L16.2 9.4C16.7 8.9 16.9 8.2 16.9 7.4C16.9 5.6 15.4 4.1 13.6 4.1C12.6 4.1 11.6 4.6 10.9 5.4C10.6 5.7 10.3 5.8 10 5.8C9.7 5.8 9.4 5.6 9.2 5.4C8.5 4.6 7.5 4.1 6.5 4.1C4.7 4.1 3.2 5.6 3.2 7.4C3.1 8.3 3.5 9 3.9 9.5C3.8 9.5 3.8 9.5 3.9 9.5Z"
-                fill="currentColor" />
-            </svg>
             <span class="visually-hidden">Избранное</span>
             <span class="user-menu__favorites-count">12</span>
           </a>
-          <a class="user-menu__want" href="#">хочу сюда!</a>
+          <a class="button button_primary user-menu__want" href="#">хочу сюда!</a>
         </div>
       </header>
 
@@ -60,14 +52,15 @@
         <section class="main__advantages advantages">
           <h2 class="visually-hidden">Преимущества</h2>
 
-          <p class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="advantages__subtext">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="title title_big title_accent advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий
+            большего!</p>
+          <p class="text_basic advantages__subtext">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
           <ul class="advantages__list">
 
             <li class="advantages__item advantages__item_dark advantages__item_special">
               <div class="advantages__container">
-                <h3 class="advantages__title advantages__title_special">Настоящий городок</h3>
+                <h3 class="title title_accent advantages__title advantages__title_special">Настоящий городок</h3>
                 <p class="advantages__text advantages__text_dark">Седона — не аттракцион для туристов, там течёт своя
                   жизнь</p>
               </div>
@@ -77,21 +70,21 @@
             <li class="advantages__item advantages__item_light">
 
               <div class="advantages__container">
-                <h3 class="advantages__title">Небольшая площадь</h3>
+                <h3 class="title title_accent advantages__title">Небольшая площадь</h3>
                 <p class="advantages__text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
 
             <li class="advantages__item ">
               <div class="advantages__container">
-                <h3 class="advantages__title">Красивая дорога</h3>
+                <h3 class="title title_accent advantages__title">Красивая дорога</h3>
                 <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
 
             <li class="advantages__item advantages__item_light">
               <div class="advantages__container">
-                <h3 class="advantages__title">Мало туристов</h3>
+                <h3 class="title title_accent advantages__title">Мало туристов</h3>
                 <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
@@ -99,8 +92,8 @@
             <li class="advantages__item advantages__item_dark advantages__item_special">
               <img class="advantages__image" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост дьявола">
               <div class="advantages__container">
-                <h3 class="advantages__title advantages__title_special">Там есть
-                  мост дьявола</h3>
+                <h3 class="title title_accent advantages__title advantages__title_special">Там есть <br>мост дьявола
+                </h3>
                 <p class="advantages__text advantages__text_dark">Да, по нему можно пройти! Если вы осмелитесь,
                   разумеется</p>
               </div>
@@ -111,44 +104,44 @@
         <section class="main__facilities facilities">
           <h2 class="visually-hidden">Возможности</h2>
           <p class="facilities__heading">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
-          <p class="facilities__text">Опытный персонал и качественное обслуживание!</p>
+          <p class="text_basic facilities__subtext">Опытный персонал и качественное обслуживание!</p>
           <ul class="facilities__list">
             <li class="facilities__item facilities__item_dark facilities__item_home">
-              <h3 class="facilities__item-title">Жильё</h3>
-              <p class="facilities__item-text">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</p>
+              <h3 class="title title_accent facilities__title">Жильё</h3>
+              <p class="facilities__text">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
             <li class="facilities__item facilities__item_food">
-              <h3 class="facilities__item-title">Еда</h3>
-              <p class="facilities__item-text">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="title title_accent facilities__title">Еда</h3>
+              <p class="facilities__text">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!</p>
             </li>
             <li class="facilities__item facilities__item_dark facilities__item_souvenirs">
-              <h3 class="facilities__item-title">Сувениры</h3>
-              <p class="facilities__item-text">Не только китайского,
-                но и настоящего местного производства!</p>
+              <h3 class="title title_accent facilities__title">Сувениры</h3>
+              <p class="facilities__text">Не только китайского, <br>но и настоящего местного <br>производства!</p>
             </li>
           </ul>
         </section>
 
         <section class="main__hotel-search hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <p class="hotel-search__heading">Заинтересовались?</p>
-          <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне</p>
-          <button class="hotel-search__button" type="button">Поиск гостинницы в седоне</button>
+          <p class="title title_big title_accent hotel-search__heading">Заинтересовались?</p>
+          <p class="text_basic hotel-search__text">
+            Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <button class="button button_big button_primary hotel-search__button" type="button">
+            Поиск гостиницы в седоне
+          </button>
         </section>
 
         <section class="main__subscribe subscribe subscribe_special">
-          <h2 class="subscribe__heading">Подпишитесь на рассылку</h2>
-          <p class="subscribe__text subscribe__text_special">Только полезная информация и никакого спама, честное
-            бойскаутское!</p>
+          <h2 class="title title_big title_accent subscribe__heading">Подпишитесь на рассылку</h2>
+          <p class="text_basic subscribe__text subscribe__text_special">
+            Только полезная информация и никакого спама, <br>честное бойскаутское!
+          </p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
             <input class="subscribe__email subscribe__email_special" type="email" name="email" id="email"
               placeholder="Ваш e-mail" required autocomplete="email">
-            <button class="subscribe__button" type="submit">Подписаться</button>
+            <button class="button button_big button_secondary subscribe__button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -191,7 +184,8 @@
         </ul>
         <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" focusable="false">
             <path d="M0 12.9V15.5H2.5V12.9H0Z" />
             <path
               d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
@@ -219,7 +213,73 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </footer>
+      <div class="modal modal_hidden">
+        <div class="modal__content">
+          <h2 class="title title_big title_accent modal__title">Поиск гостиницы в Седоне</h2>
+          <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
+          <form action="post" class="modal__form" action="https://echo.htmlacademy.ru">
+            <label class="title title_small modal__label modal__label_arrival" for="arrival-date">Дата Заезда:</label>
+            <input class="modal__input modal__input_arrival" type="text" name="arrival-date" id="arrival-date"
+              placeholder="Укажите дату" required value="27 апреля 2020">
+            <p class="modal__info modal__info_arrival modal__info_error">Мы не можем отправить вас в прошлое.</p>
+
+            <label class="title title_small modal__label modal__label_departure" for="departure-date">Дата
+              Выезда:</label>
+            <input class="modal__input modal__input_departure" type="text" name="departure-date"
+              id="departure-date"="Укажите дату" required value="1 сентября 2021">
+            <p class="modal__info modal__info_departure">На эти даты есть свободные номера. Пока есть.</p>
+
+            <label class="title title_small modal__label modal__label_adult" for="adults">Взрослые:</label>
+            <div class="modal__container_adult modal__countainer">
+              <button class="modal__changer modal__changer_minus" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+                <span class="modal__changer-inner">
+                </span>
+              </button>
+              <input class="modal__counter" type="number" inputmode="numeric" name="adults" id="adults" value="2"
+                min="0" max="9" step="1" required>
+              <button class="modal__changer modal__changer_plus" type="button">
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+                <span class="modal__changer-inner">
+                </span>
+              </button>
+            </div>
+
+            <div class="modal__children-tooltip">
+              <label class="title title_small modal__label modal__label_children" for="children">Дети:</label>
+              <span class="modal__tooltip">
+                <button class="modal__tooltip-button" type="button" aria-labelledby="tooltip-text">
+                  <svg class="modal__tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                  </svg>
+                </button>
+                <span class="modal__tooltip-text" role="tooltip" id="tooltip-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </span>
+            </div>
+            <div class="modal__container_children modal__countainer">
+              <button class="modal__changer modal__changer_minus" type="button">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+                <span class="modal__changer-inner">
+                </span>
+              </button>
+              <input class="modal__counter" type="number" inputmode="numeric" name="children" id="children" value="2"
+                min="0" max="9" step="1" required>
+              <button class="modal__changer modal__changer_plus" type="button">
+                <span class="visually-hidden">Увеличить количество детей</span>
+                <span class="modal__changer-inner">
+                </span>
+              </button>
+            </div>
+
+            <button class="button button_big button_secondary modal__button" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="scripts/modal.js"></script>
   </body>
 
 </html>

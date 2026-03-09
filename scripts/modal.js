@@ -1,0 +1,11 @@
+const modal = document.querySelector('.modal');
+const openModal = document.querySelector('.user-menu__want');
+const closeModal = document.querySelector('.modal__close');
+
+openModal.addEventListener('click', () => {
+  modal.classList.remove('modal_hidden');
+});
+
+closeModal.addEventListener('click', () => {
+  modal.classList.add('modal_hidden');
+});
