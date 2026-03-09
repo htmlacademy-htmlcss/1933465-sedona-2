@@ -292,7 +292,6 @@ body {
   width: calc(100% - 32px);
   height: 2px;
   background-color: #756257;
-  /* border-bottom: 2px solid #756257; */
 }
 
 .user-menu {
