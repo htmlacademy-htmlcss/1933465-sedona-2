@@ -1,5 +1,5 @@
 const modal = document.querySelector('.modal');
-const openModal = document.querySelector('.user-menu__want');
+const openModal = document.querySelector('.hotel-search__button');
 const closeModal = document.querySelector('.modal__close');
 
 openModal.addEventListener('click', () => {

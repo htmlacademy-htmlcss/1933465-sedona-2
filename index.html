@@ -12,7 +12,7 @@
   <body class="page">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="page-header__navigation navigation">
+        <nav class="page-header__navigation navigation" aria-label="Основная">
           <a class="navigation__logo" href="index.html" aria-current="page">
             <img class="navigation__image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
@@ -216,18 +216,18 @@
       <div class="modal modal_hidden">
         <div class="modal__content">
           <h2 class="title title_big title_accent modal__title">Поиск гостиницы в Седоне</h2>
-          <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
-          <form action="post" class="modal__form" action="https://echo.htmlacademy.ru">
+          <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <form action="https://echo.htmlacademy.ru" method="post" class="modal__form" action="https://echo.htmlacademy.ru">
             <label class="title title_small modal__label modal__label_arrival" for="arrival-date">Дата Заезда:</label>
             <input class="modal__input modal__input_arrival" type="text" name="arrival-date" id="arrival-date"
-              placeholder="Укажите дату" required value="27 апреля 2020">
-            <p class="modal__info modal__info_arrival modal__info_error">Мы не можем отправить вас в прошлое.</p>
+              placeholder="Укажите дату" value="27 апреля 2020" aria-describedby="arrival-info" required>
+            <p class="modal__info modal__info_arrival modal__info_error" id="arrival-info">Мы не можем отправить вас в прошлое.</p>
 
             <label class="title title_small modal__label modal__label_departure" for="departure-date">Дата
               Выезда:</label>
             <input class="modal__input modal__input_departure" type="text" name="departure-date"
-              id="departure-date"="Укажите дату" required value="1 сентября 2021">
-            <p class="modal__info modal__info_departure">На эти даты есть свободные номера. Пока есть.</p>
+              id="departure-date"="Укажите дату" value="1 сентября 2021" aria-describedby="departure-info" required>
+            <p class="modal__info modal__info_departure" id="departure-info">На эти даты есть свободные номера. Пока есть.</p>
 
             <label class="title title_small modal__label modal__label_adult" for="adults">Взрослые:</label>
             <div class="modal__container_adult modal__countainer">

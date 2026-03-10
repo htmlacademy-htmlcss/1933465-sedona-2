@@ -12,7 +12,7 @@
   <body class="page">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="page-header__navigation navigation">
+        <nav class="page-header__navigation navigation" aria-label="Основная">
           <a class="navigation__logo" href="index.html">
             <img class="navigation__image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
@@ -71,23 +71,20 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="filters__checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
-                      <span class="filters__mark filter__mark_checkbox"></span>
+                      <input class="filters__checkbox filters__mark" type="checkbox" name="pool" id="pool" checked>
                       Бассейн
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="visually-hidden filters__checkbox" type="checkbox" name="parking" id="parking"
+                      <input class="filters__checkbox filters__mark" type="checkbox" name="parking" id="parking"
                         checked>
-                      <span class="filters__mark filter__mark_checkbox"></span>
                       Парковка
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="visually-hidden filters__checkbox" type="checkbox" name="wifi" id="wifi">
-                      <span class="filters__mark filter__mark_checkbox"></span>
+                      <input class="filters__checkbox filters__mark" type="checkbox" name="wifi" id="wifi">
                       Wi-Fi
                     </label>
                   </li>
@@ -99,25 +96,22 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="visually-hidden filters__radio" type="radio" name="habitation" id="hotel"
+                      <input class="filters__radio filters__mark" type="radio" name="habitation" id="hotel"
                         value="hotel" checked>
-                      <span class="filters__mark filter__mark_radio"></span>
                       Гостиница
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="visually-hidden filters__radio" type="radio" name="habitation" id="motel"
+                      <input class="filters__radio filters__mark" type="radio" name="habitation" id="motel"
                         value="motel">
-                      <span class="filters__mark filter__mark_radio"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="filters__control">
-                      <input class="visually-hidden filters__radio" type="radio" name="habitation" id="apartments"
+                      <input class="filters__radio filters__mark" type="radio" name="habitation" id="apartments"
                         value="apartments">
-                      <span class="filters__mark filter__mark_radio"></span>
                       Апартаменты
                     </label>
                   </li>
@@ -149,12 +143,13 @@
                       </button>
                     </div>
                   </div>
+                </div>
               </fieldset>
               <div class="filters__button-container">
                 <button class="button button_secondary filters__submit filters__button" type="submit">Применить</button>
                 <button class="button filters__reset filters__button" type="reset">Сбросить</button>
 
-                </di>
+              </div>
             </form>
           </section>
         </div>
@@ -293,7 +288,8 @@
         </div>
         <section class="main__subscribe subscribe">
           <h2 class="title title_big title_accent subscribe__heading">Подпишитесь на рассылку</h2>
-          <p class="text_basic subscribe__text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <p class="text_basic subscribe__text">Только полезная информация и никакого спама, <br>честное бойскаутское!
+          </p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
             <input class="subscribe__email subscribe__email_reverse" type="email" name="email" id="email"
