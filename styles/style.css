@@ -1551,10 +1551,9 @@ body {
   display: grid;
   place-items: center;
   padding-inline: 10px;
-  --icon-color: var(--color-text-primary-active);
 
-  &:is(:hover, :focus-visible) {
-    --icon-color: var(--icons-basic);
+  &:is(:hover, :focus-visible) .modal__changer-inner::after  {
+    background-color: var(--icons-basic);
   }
 
   &:focus-visible {
@@ -1565,22 +1564,22 @@ body {
     }
   }
 
-  &:active {
-    --icon-color: var(--icons-basic-active);
+  &:active .modal__changer-inner::after {
+    background-color: var(--icons-basic-active);
   }
 }
 
-.modal__changer_minus {
-  order: -1;
-  --sign-icon: url("../images/minus.svg");
+.modal__changer_minus .modal__changer-inner::after {
+  clip-path: polygon(0 6px, 14px 6px, 14px 8px, 0 8px);
 }
 
-.modal__changer_plus {
-  --sign-icon: url("../images/plus.svg");
+.modal__changer_plus .modal__changer-inner::after {
+  clip-path: polygon(6px 0, 8px 0, 8px 6px, 14px 6px, 14px 8px, 8px 8px, 8px 14px, 6px 14px, 6px 8px, 0 8px, 0 6px, 6px 6px);
 }
 
 .modal__changer-inner {
-  display: block;
+  display: grid;
+  place-content: center;
   width: 20px;
   height: 20px;
   border-radius: var(--border-radius);
@@ -1588,12 +1587,9 @@ body {
   &::after {
     content: "";
     display: block;
-    width: 20px;
-    height: 20px;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    background-color: var(--icon-color);
-    mask-image: var(--sign-icon, "../images/plus.svg");
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-text-primary-active);
     transition: background-color 0.3s ease-in-out;
   }
 }

@@ -217,17 +217,20 @@
         <div class="modal__content">
           <h2 class="title title_big title_accent modal__title">Поиск гостиницы в Седоне</h2>
           <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-          <form action="https://echo.htmlacademy.ru" method="post" class="modal__form" action="https://echo.htmlacademy.ru">
+          <form action="https://echo.htmlacademy.ru" method="post" class="modal__form"
+            action="https://echo.htmlacademy.ru">
             <label class="title title_small modal__label modal__label_arrival" for="arrival-date">Дата Заезда:</label>
             <input class="modal__input modal__input_arrival" type="text" name="arrival-date" id="arrival-date"
               placeholder="Укажите дату" value="27 апреля 2020" aria-describedby="arrival-info" required>
-            <p class="modal__info modal__info_arrival modal__info_error" id="arrival-info">Мы не можем отправить вас в прошлое.</p>
+            <p class="modal__info modal__info_arrival modal__info_error" id="arrival-info">Мы не можем отправить вас в
+              прошлое.</p>
 
             <label class="title title_small modal__label modal__label_departure" for="departure-date">Дата
               Выезда:</label>
             <input class="modal__input modal__input_departure" type="text" name="departure-date"
               id="departure-date"="Укажите дату" value="1 сентября 2021" aria-describedby="departure-info" required>
-            <p class="modal__info modal__info_departure" id="departure-info">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="modal__info modal__info_departure" id="departure-info">На эти даты есть свободные номера. Пока
+              есть.</p>
 
             <label class="title title_small modal__label modal__label_adult" for="adults">Взрослые:</label>
             <div class="modal__container_adult modal__countainer">
@@ -262,15 +265,13 @@
             <div class="modal__container_children modal__countainer">
               <button class="modal__changer modal__changer_minus" type="button">
                 <span class="visually-hidden">Уменьшить количество детей</span>
-                <span class="modal__changer-inner">
-                </span>
+                <span class="modal__changer-inner"></span>
               </button>
               <input class="modal__counter" type="number" inputmode="numeric" name="children" id="children" value="2"
                 min="0" max="9" step="1" required>
               <button class="modal__changer modal__changer_plus" type="button">
                 <span class="visually-hidden">Увеличить количество детей</span>
-                <span class="modal__changer-inner">
-                </span>
+                <span class="modal__changer-inner"></span>
               </button>
             </div>
 
