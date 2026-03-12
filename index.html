@@ -217,8 +217,7 @@
         <div class="modal__content">
           <h2 class="title title_big title_accent modal__title">Поиск гостиницы в Седоне</h2>
           <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-          <form action="https://echo.htmlacademy.ru" method="post" class="modal__form"
-            action="https://echo.htmlacademy.ru">
+          <form action="https://echo.htmlacademy.ru" method="get" class="modal__form">
             <label class="title title_small modal__label modal__label_arrival" for="arrival-date">Дата Заезда:</label>
             <input class="modal__input modal__input_arrival" type="text" name="arrival-date" id="arrival-date"
               placeholder="Укажите дату" value="27 апреля 2020" aria-describedby="arrival-info" required>
@@ -261,6 +260,7 @@
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                   размещаются бесплатно.
                 </span>
+              </span>
             </div>
             <div class="modal__container_children modal__countainer">
               <button class="modal__changer modal__changer_minus" type="button">
@@ -268,7 +268,7 @@
                 <span class="modal__changer-inner"></span>
               </button>
               <input class="modal__counter" type="number" inputmode="numeric" name="children" id="children" value="2"
-                min="0" max="9" step="1">
+                min="0" max="9" step="1" placeholder="0">
               <button class="modal__changer modal__changer_plus" type="button">
                 <span class="visually-hidden">Увеличить количество детей</span>
                 <span class="modal__changer-inner"></span>
