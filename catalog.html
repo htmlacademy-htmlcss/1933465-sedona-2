@@ -11,7 +11,7 @@
 
   <body class="page">
     <div class="page__wrapper">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="page-header__navigation navigation" aria-label="Основная">
           <a class="navigation__logo" href="index.html">
             <img class="navigation__image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -41,7 +41,7 @@
         </div>
       </header>
 
-      <main class="main catalog">
+      <main class="main catalog" data-test="main">
         <div class="main__container">
           <section class="main__header">
             <h1 class="title title_huge main__title">Гостиницы Седоны</h1>
@@ -63,7 +63,7 @@
             </ol>
           </section>
 
-          <section class="main__filters filters">
+          <section class="main__filters filters" data-test="filter">
             <h2 class="visually-hidden">Фильтры</h2>
             <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filters__group">
@@ -154,7 +154,7 @@
           </section>
         </div>
 
-        <div class="main__hotels-container">
+        <div class="main__hotels-container" data-test="catalog">
           <section class="main__view-control view-control">
             <h3 class="visually-hidden">Поиск гостиниц</h3>
             <p class="title title_big title_accent view-control__results">Найдено гостиниц:&nbsp;
@@ -286,7 +286,7 @@
             </ul>
           </section>
         </div>
-        <section class="main__subscribe subscribe">
+        <section class="main__subscribe subscribe" data-test="subscribe">
           <h2 class="title title_big title_accent subscribe__heading">Подпишитесь на рассылку</h2>
           <p class="text_basic subscribe__text">Только полезная информация и никакого спама, <br>честное бойскаутское!
           </p>
@@ -299,7 +299,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
