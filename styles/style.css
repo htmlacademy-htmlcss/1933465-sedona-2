@@ -386,6 +386,7 @@ body {
 
 .user-menu__promo {
   min-width: 160px;
+  max-width: 200px;
   box-sizing: border-box;
   margin-inline-start: 20px;
   display: block;
@@ -835,6 +836,7 @@ body {
 
   &:hover {
     opacity: 0.6;
+
   }
 
   &:active {
@@ -852,6 +854,11 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
+  cursor: pointer;
+
+  &:has(.filters__mark:disabled) {
+    cursor: default;
+  }
 }
 
 .filters__mark {
@@ -864,15 +871,12 @@ body {
   width: 20px;
   height: 20px;
   background-color: var(--color-background-primary);
+  cursor: inherit;
 
   &::before {
     display: block;
     content: '';
     transition: background-color 0.3s ease-in-out;
-  }
-
-  &:hover:not(:disabled) {
-    cursor: pointer;
   }
 
   &:focus-visible {
@@ -1219,11 +1223,13 @@ body {
   text-decoration: none;
   color: inherit;
   grid-area: title;
-}
 
-.hotels__title {
   &:is(:hover, :focus-visible) {
     color: var(--color-text-primary-hover);
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--icons-second);
   }
 
   &:active {
@@ -1580,11 +1586,11 @@ body {
 }
 
 .modal__changer_minus .modal__changer-inner::after {
-  clip-path: polygon(0 6px, 14px 6px, 14px 8px, 0 8px);
+  clip-path: polygon(15% 45%, 85% 45%, 85% 55%, 15% 55%);
 }
 
 .modal__changer_plus .modal__changer-inner::after {
-  clip-path: polygon(6px 0, 8px 0, 8px 6px, 14px 6px, 14px 8px, 8px 8px, 8px 14px, 6px 14px, 6px 8px, 0 8px, 0 6px, 6px 6px);
+  clip-path: polygon(45% 15%, 55% 15%, 55% 45%, 85% 45%, 85% 55%, 55% 55%, 55% 85%, 45% 85%, 45% 55%, 15% 55%, 15% 45%, 45% 45%);
 }
 
 .modal__changer-inner {
@@ -1597,8 +1603,8 @@ body {
   &::after {
     content: "";
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     background-color: var(--color-text-primary-active);
     transition: background-color 0.3s ease-in-out;
   }
