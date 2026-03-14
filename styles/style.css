@@ -874,7 +874,8 @@ body {
   height: 20px;
   background-color: var(--color-background-primary);
   cursor: inherit;
-
+  flex-shrink: 0;
+  
   &::before {
     display: block;
     content: '';
