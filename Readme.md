@@ -1,8 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Дымов](https://up.htmlacademy.ru/htmlcss-individual/2/user/1933465).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Андрей
+Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Sedona](https://despair322.github.io/1933465-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
