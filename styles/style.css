@@ -798,7 +798,6 @@ body {
   margin: auto auto auto 0;
 }
 
-/* filters */
 .filters {
   color: var(--color-text-tertiary);
 }
@@ -875,7 +874,7 @@ body {
   background-color: var(--color-background-primary);
   cursor: inherit;
   flex-shrink: 0;
-  
+
   &::before {
     display: block;
     content: '';
